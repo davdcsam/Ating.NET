@@ -1,13 +1,48 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AlgoBuild>false</AlgoBuild>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>AutomateTrading</Title>
+		<Authors>davdcsam</Authors>
+		<PackageProjectUrl>https://github.com/davdcsam/AutomateTrading</PackageProjectUrl>
+		<PackageIcon>resources/dotnet.png</PackageIcon>
+		<RepositoryUrl>https://github.com/davdcsam/AutomateTrading</RepositoryUrl>
+		<PackageTags>cAlgo cBot CTrader Automate</PackageTags>
+		<PackAsTool>True</PackAsTool>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<NeutralLanguage>aa-DJ</NeutralLanguage>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<Version>1.0.1</Version>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageReleaseNotes>
+			Initial update:
+			Add Limits, Parallels, ProfitProtection, SectionTime &amp; Trade classes.
+		</PackageReleaseNotes>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="cTrader.Automate" Version="1.0.8" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="cTrader.Automate" Version="1.0.8" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Update="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Update="resources\dotnet.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
