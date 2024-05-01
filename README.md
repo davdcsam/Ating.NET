@@ -1,1 +1,1 @@
-# AutomateTrading
+# AutomatedTrading.NET

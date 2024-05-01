@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<AlgoBuild>false</AlgoBuild>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Title>AutomateTrading</Title>
+		<Title>AutomatedTrading</Title>
 		<Authors>davdcsam</Authors>
 		<PackageProjectUrl>https://github.com/davdcsam/AutomateTrading</PackageProjectUrl>
 		<PackageIcon>resources/dotnet.png</PackageIcon>
