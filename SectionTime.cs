@@ -28,7 +28,12 @@ namespace SectionTime
             CurrentTimeSpan = TimeSpan.Zero;
         }
 
-        public void ApplicationUserTimeOffsetChanged() => UpdateUserTimeOffset();
+        public void AppUserTimeOffsetChanged(UserTimeOffsetChangedEventArgs args)
+        {
+            if (args == null) { _cbot.Print("UserTimeOffsetChangedEventArgs is null"); return; }
+            _cbot.Print("User timezone changed to " + args.UserTimeOffset.ToString());
+            UpdateUserTimeOffset();
+        }
 
         public void UpdateUserTimeOffset()
         {

@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
+		<OutputType>Library</OutputType>
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
@@ -12,19 +13,24 @@
 		<PackageIcon>resources/dotnet.png</PackageIcon>
 		<RepositoryUrl>https://github.com/davdcsam/AutomatedTrading.NET</RepositoryUrl>
 		<PackageTags>cAlgo cBot CTrader Automate</PackageTags>
-		<PackAsTool>True</PackAsTool>
+		<PackAsTool>False</PackAsTool>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<NeutralLanguage>aa-DJ</NeutralLanguage>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-		<Version>1.0.2</Version>
+		<Version>1.0.5</Version>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageReleaseNotes>
 			Initial update:
 			Add Limits, Parallels, ProfitProtection, SectionTime &amp; Trade classes.
 		</PackageReleaseNotes>
+		<ApplicationIcon>resources\automatedtrading.net.ico</ApplicationIcon>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="resources\automatedtrading.net.ico" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="cTrader.Automate" Version="1.0.8" />
