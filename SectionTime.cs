@@ -163,7 +163,7 @@ namespace SectionTime
         }
         public bool VerifyInsideInterval()
         {
-            if (CurrentDatetime > StartDateTime && CurrentDatetime < EndDateTime)
+            if (CurrentDatetime >= StartDateTime && CurrentDatetime <= EndDateTime)
             {
                 return true;
             }
@@ -172,7 +172,7 @@ namespace SectionTime
 
         public bool VerifyInsideInterval(DateTime currentDatetime)
         {
-            if (currentDatetime > StartDateTime && currentDatetime < EndDateTime) { return true; }
+            if (currentDatetime >= StartDateTime && currentDatetime <= EndDateTime) { return true; }
             return false;
         }
         public bool UpdateDatetimeInterval()
